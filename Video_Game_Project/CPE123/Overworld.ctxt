@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Overworld()
+comment1.params=
+comment1.target=void\ addTiles()
+comment2.params=
+comment2.target=void\ addWater()
+comment3.params=
+comment3.target=void\ gameOver()
+comment4.params=
+comment4.target=Player\ getPlayer()
+comment5.params=
+comment5.target=Scroller\ getScroller()
+comment6.params=
+comment6.target=HealthBar\ getHealthBar()
+comment7.params=
+comment7.target=MoneyBag\ getMoneyBag()
+comment8.params=
+comment8.target=ArrowCounter\ getArrowCounter()
+comment9.params=x
+comment9.target=void\ setBossBattle(int)
+numComments=10

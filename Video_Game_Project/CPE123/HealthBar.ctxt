@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=health
+comment0.target=HealthBar(int)
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ normalHit()
+comment3.params=
+comment3.target=void\ bossHit()
+comment4.params=
+comment4.target=void\ gainHealth()
+comment5.params=
+comment5.target=void\ updateImage()
+comment6.params=
+comment6.target=void\ gameOver()
+numComments=7

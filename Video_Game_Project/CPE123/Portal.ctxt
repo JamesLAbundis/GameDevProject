@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Portal()
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=Portal\ getNextPortal()
+comment3.params=p
+comment3.target=void\ setNextPortal(Portal)
+numComments=4

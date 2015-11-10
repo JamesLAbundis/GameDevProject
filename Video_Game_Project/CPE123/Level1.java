@@ -1,0 +1,153 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+/** 
+* Sean coded this class   
+**/
+public class Level1 extends Overworld
+{
+    //Sean
+    public Level1(){
+        Variables.Level = "Level 1";
+        prepare();
+        levelMusic = new GreenfootSound("level1.mp3");
+        levelMusic.playLoop();
+    }
+    
+    //Sean
+    public void prepare(){
+        Tent1 t1 = new Tent1(); addObject(t1, 950, 330);
+        Tent1 t2 = new Tent1(); addObject(t2, 1175, 330);
+        Tent1 t3 = new Tent1(); addObject(t3, 1350, 330);
+        TallPlat tp1 = new TallPlat(); addObject(tp1, -300, 379);
+        TallPlat tp2 = new TallPlat(); addObject(tp2, -300, 205);
+        Player = new Player();
+        Scroller = new Scroller(); addObject(Scroller, 400, -10);
+        InfoBar = new InfoBar();
+        playerHealthBar= new HealthBar(10);
+        arrowCounter = new ArrowCounter(0);
+        moneybag = new MoneyBag(0);
+        TalkingNPC mom = new TalkingNPC(50); addObject(mom, 1450, 365);
+        Mage jafar1 = new Mage(30); addObject(jafar1, 3940, 44);
+        Mage jafar3 = new Mage(30); addObject(jafar3, 4720, 184);
+        Mage jafar5 = new Mage(30); addObject(jafar5, 7200, 258);
+        Mage jafar7 = new Mage(30); addObject(jafar7, 7500, 258);
+        Mage jafar8 = new Mage(30); addObject(jafar8, 9990, 300);
+        Mage jafar10 = new Mage(30); addObject(jafar10, 11560, 258);
+        Mage jafar12 = new Mage(30); addObject(jafar12, 13560, 356);
+        Mage jafar13 = new Mage(30); addObject(jafar13, 13900, 356);
+        Mercenary merc1 = new Mercenary(30); addObject(merc1, 7400, 357);
+        Mercenary merc3 = new Mercenary(30); addObject(merc3, 9100, 357);
+        Mercenary merc4 = new Mercenary(30); addObject(merc4, 11150, 357);
+        Mercenary merc5 = new Mercenary(30); addObject(merc5, 11400, 357);   
+        HealthPotion hp1 = new HealthPotion(); addObject(hp1, 8050, 367);
+        HealthPotion hp0 = new HealthPotion(); addObject(hp0, 5500, 367);
+        HealthPotion hp2 = new HealthPotion(); addObject(hp2, 12000, 49);
+        HealthPotion hp3 = new HealthPotion(); addObject(hp3, 14500, 49);
+        HealthPotion hp4 = new HealthPotion(); addObject(hp4, 14800, 367);
+        Scorpion ss1 = new Scorpion(25); addObject( ss1, 6100, 362);
+        Scorpion ss2 = new Scorpion(25); addObject( ss2, 6200, 362);
+        Scorpion ss3 = new Scorpion(25); addObject( ss3, 6300, 362);
+        Scorpion ss4 = new Scorpion(25); addObject( ss4, 6400, 362);
+        Scorpion ss5 = new Scorpion(25); addObject( ss5, 6150, 362);
+        Scorpion ss6 = new Scorpion(25); addObject( ss6, 6250, 362);
+        Scorpion ss7 = new Scorpion(25); addObject( ss7, 6350, 362);
+        Scorpion ss8 = new Scorpion(25); addObject( ss8, 6450, 362);
+        Coyote c1 = new Coyote(10); addObject(c1, 4400, 380);
+        Coyote c2 = new Coyote(25); addObject(c2, 12300, 380);
+        Coyote c3 = new Coyote(25); addObject(c3, 12400, 380);
+        Coyote c4 = new Coyote(25); addObject(c4, 12500, 380);
+        Coyote c5 = new Coyote(25); addObject(c5, 12900, 380);
+        Coyote c6 = new Coyote(25); addObject(c6, 12600, 380);
+        Coyote c7 = new Coyote(25); addObject(c7, 12700, 380);
+        Coyote c8 = new Coyote(25); addObject(c8, 12800, 380);
+        Platform platform1 = new Platform(); addObject(platform1, 2600, 340);
+        Platform platform2 = new Platform(); addObject(platform2, 2750, 280);
+        Platform platform3 = new Platform(); addObject(platform3, 2805, 230);
+        Platform platform4 = new Platform(); addObject(platform4, 2700, 150);
+        Platform platform5 = new Platform(); addObject(platform5, 3800, 350);
+        Platform platform6 = new Platform(); addObject(platform6, 3850, 270);
+        Platform platform7 = new Platform(); addObject(platform7, 3785, 190);
+        Platform platform8 = new Platform(); addObject(platform8, 3850, 100);
+        Platform platform9 = new Platform(); addObject(platform9, 4600, 310);
+        Platform platform10 = new Platform(); addObject(platform10, 5100, 310);
+        Platform platform11 = new Platform(); addObject(platform11, 5300, 310);
+        Platform platform12 = new Platform(); addObject(platform12, 5700, 320);
+        Platform platform13 = new Platform(); addObject(platform13, 5980, 159);
+        Platform platform14 = new Platform(); addObject(platform14, 6353, 314);
+        Platform platform15 = new Platform(); addObject(platform15, 7200, 314);
+        Platform platform16 = new Platform(); addObject(platform16, 7500, 314);
+        Platform platform17 = new Platform(); addObject(platform17, 6900, 314);
+        Platform platform18 = new Platform(); addObject(platform18, 8240, 320);
+        Platform platform19 = new Platform(); addObject(platform19, 8342, 278);
+        Platform platform20 = new Platform(); addObject(platform20, 8272, 164);
+        Platform platform21 = new Platform(); addObject(platform21, 8123, 100);
+        Platform platform22 = new Platform(); addObject(platform22, 8324, 54);
+        Platform platform23 = new Platform(); addObject(platform23, 8724, 64);
+        Platform platform24 = new Platform(); addObject(platform24, 8924, 104);
+        Platform platform25 = new Platform(); addObject(platform25, 9124, 64);
+        Platform platform26 = new Platform(); addObject(platform26, 9327,154);
+        Platform platform27 = new Platform(); addObject(platform27, 9767, 314);
+        Platform platform28 = new Platform(); addObject(platform28, 9977, 355);
+        Platform platform29 = new Platform(); addObject(platform29, 10127, 314);
+        Platform platform30 = new Platform(); addObject(platform30, 10327, 355);
+        Platform platform31 = new Platform(); addObject(platform31, 10500, 355);
+        Platform platform32 = new Platform(); addObject(platform32, 11300, 310);
+        Platform platform33 = new Platform(); addObject(platform33, 11560, 310);
+        Platform platform34 = new Platform(); addObject(platform34, 11900, 310);
+        Platform platform35 = new Platform(); addObject(platform35, 11790, 230);
+        Platform platform36 = new Platform(); addObject(platform36, 11850, 120);
+        Platform platform365 = new Platform(); addObject(platform365, 12175, 141);
+        Platform platform37 = new Platform(); addObject(platform37, 12324, 54);
+        Platform platform38 = new Platform(); addObject(platform38, 12524, 54);
+        Platform platform39 = new Platform(); addObject(platform39, 12724, 104);
+        Platform platform40 = new Platform(); addObject(platform40, 12924, 64);
+        Platform platform41 = new Platform(); addObject(platform41, 13080, 268);
+        Platform platform42 = new Platform(); addObject(platform42, 12200, 310);
+        Platform platform43 = new Platform(); addObject(platform43, 12100, 240);
+        Platform platform44 = new Platform(); addObject(platform44, 14370, 324);
+        Platform platform45 = new Platform(); addObject(platform45, 14400, 197);
+        Platform platform46 = new Platform(); addObject(platform46, 14430, 49);
+        Platform platform47 = new Platform(); addObject(platform47, 14230, 257);
+        Platform platform48 = new Platform(); addObject(platform48, 14237, 109);
+        TallPlat tp3 = new TallPlat(); addObject(tp3, 2900, 315);
+        TallPlat tp4 = new TallPlat(); addObject(tp4, 2900, 175);      
+        TallPlat tp5 = new TallPlat(); addObject(tp5, 3925, 315);
+        TallPlat tp6 = new TallPlat(); addObject(tp6, 3925, 175);
+        TallPlat tp7 = new TallPlat(); addObject(tp7, 4700, 315);
+        TallPlat tp8 = new TallPlat(); addObject(tp8, 5800, 315);
+        TallPlat tp9 = new TallPlat(); addObject(tp9, 6170, 201);
+        TallPlat tp10 = new TallPlat(); addObject(tp10, 6550, 315);
+        TallPlat tp11 = new TallPlat(); addObject(tp11, 8508, 129);
+        TallPlat tp12 = new TallPlat(); addObject(tp12, 8508, 240);
+        TallPlat tp13 = new TallPlat(); addObject(tp13, 9508, 320);
+        TallPlat tp14 = new TallPlat(); addObject(tp14, 9508, 149);
+        TallPlat tp15 = new TallPlat(); addObject(tp15, 12000, 149);
+        TallPlat tp16 = new TallPlat(); addObject(tp16, 12000, 320);
+        TallPlat tp17 = new TallPlat(); addObject(tp17, 14500, 320);
+        TallPlat tp18 = new TallPlat(); addObject(tp18, 14500, 149);
+        TallPlat tp19 = new TallPlat(); addObject(tp19, 13250, 320);
+        TallPlat tp20 = new TallPlat(); addObject(tp20, 13250, 50);
+        Sign sign1 = new Sign(1); addObject(sign1, 250, 362);
+        Sign sign2 = new Sign(2); addObject(sign2, 2300, 362);
+        Sign sign3 = new Sign(3); addObject(sign3, 3250, 362);
+        Sign sign4 = new Sign(4); addObject(sign4, 1850, 362);
+        Sign sign5 = new Sign(5); addObject(sign5, 4950, 362);
+        Sign sign6 = new Sign(6); addObject(sign6, 8500, 362);
+        BossBattleInit bbi = new BossBattleInit(); addObject(bbi, 15500, -10);
+        LevelOneBoss lob = new LevelOneBoss(200); addObject(lob, 15500, 271);
+        addTiles();
+        Quicksand qs1 = new Quicksand(); addObject(qs1, 5100, 435);
+        Quicksand qs2 = new Quicksand(); addObject(qs2, 5200, 435);
+        Quicksand qs3 = new Quicksand(); addObject(qs3, 5300, 435);
+        Quicksand qs6 = new Quicksand(); addObject(qs6, 9800, 435);
+        Quicksand qs7 = new Quicksand(); addObject(qs7, 9900, 435);
+        Quicksand qs8 = new Quicksand(); addObject(qs8, 10000, 435);
+        Quicksand qs9 = new Quicksand(); addObject(qs9, 10100, 435);
+        Quicksand qs10 = new Quicksand(); addObject(qs10, 10200, 435);
+        Quicksand qs11 = new Quicksand(); addObject(qs11, 10300, 435);
+        Quicksand qs12 = new Quicksand(); addObject(qs12, 10400, 435);
+        addObject(Player, 200, 361);
+        addObject(InfoBar, 400, 535);
+        addObject(playerHealthBar,210,530);
+        addObject(moneybag,400,530);
+    }
+}

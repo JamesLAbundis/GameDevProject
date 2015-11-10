@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=select
+comment0.target=FinalBossWeapons(boolean)
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ sideShot()
+comment3.params=
+comment3.target=void\ lockShot()
+comment4.params=
+comment4.target=void\ hit()
+comment5.params=
+comment5.target=void\ checkPlayer()
+comment6.params=b
+comment6.target=void\ setDirection(boolean)
+numComments=7

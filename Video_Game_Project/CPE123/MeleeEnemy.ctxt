@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=health\ type
+comment0.target=MeleeEnemy(int,\ java.lang.String)
+comment1.params=
+comment1.target=void\ attack()
+comment2.params=
+comment2.target=void\ move()
+comment3.params=type
+comment3.target=void\ enemyType(java.lang.String)
+numComments=4

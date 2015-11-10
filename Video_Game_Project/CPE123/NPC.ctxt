@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ setLocation()
+comment1.params=speed
+comment1.target=void\ Scroll(int)
+comment2.params=
+comment2.target=void\ scrollingMethods()
+numComments=3

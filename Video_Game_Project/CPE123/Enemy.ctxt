@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=health
+comment0.target=Enemy(int)
+comment1.params=
+comment1.target=void\ takeDamage()
+comment2.params=prob
+comment2.target=void\ dropGems(int)
+comment3.params=prob
+comment3.target=void\ dropArrows(int)
+numComments=4
